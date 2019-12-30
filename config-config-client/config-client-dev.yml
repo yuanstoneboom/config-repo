@@ -1,5 +1,14 @@
 server:
   port: 8050
 
+spring:
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      discovery:
+        instance-host: ${spring.cloud.client.ip-address}
+        instance-port: ${server.port}
+        prefer-ip-address: true
+
 config:
   name: yuansj
