@@ -11,4 +11,4 @@ server:
 #        prefer-ip-address: true
 
 config:
-  name: yuansj
+  name: yuansj dev
